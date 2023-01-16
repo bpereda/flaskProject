@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% if title %}
         <title> Flask Blog - {{ title }} </title>
     {% else %}
         <title> Flask Blog </title>
     {% endif %}
+    <style>
+        h1 {
+            color: red;
+        }
+        .small {
+
+        }
+    </style>
 </head>
 <body>
     {% with messages=get_flashed_messages(with_categories=true) %}
